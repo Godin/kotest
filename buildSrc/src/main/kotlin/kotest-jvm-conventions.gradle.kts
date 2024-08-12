@@ -8,6 +8,11 @@ import kotlin.jvm.optionals.getOrElse
 
 plugins {
    id("kotlin-conventions")
+   id("org.jetbrains.kotlinx.kover")
+}
+
+kover {
+  useJacoco("0.8.13-SNAPSHOT")
 }
 
 kotlin {
